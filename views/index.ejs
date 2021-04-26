@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College List</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+<body style="background-color: rgba(255,205,0,1);">
+    
+    <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">College</th>
+            <th scope="col">ID</th>
+            <th scope="col">First Name</th>
+            <th scope="col">Last Name</th>
+            <th scope="col">Email</th>
+            <th scope="col">Phone Number</th>
+            <th scope="col">City</th>
+            <th scope="col">Year Of Graduation</th>
+            <th scope="col">Date of Registration</th>
+          </tr>
+        </thead>
+        <tbody>
+        <%mytablesList.forEach(mytable => {%>
+            <tr>
+                <th scope="row"><%= mytable.q5 %></th>
+                <td><%= mytable._id %></td>
+                <td><%= mytable.q1 %></td>
+                <td><%= mytable.q2 %></td>
+                <td><%= mytable.q3 %></td>
+                <td><%= mytable.q4 %></td>
+                <td><%= mytable.q7 %></td>
+                <td><%= mytable.q6 %></td>
+                <td><%= mytable.date %></td>
+            </tr>
+        <%})%>
+        </tbody>
+      </table>
+      <a  href="http://getxpregpkr.netlify.app"><button style="font-size: large;" class='btn btn-primary btn-block'>Registration Page</button></a>
+</body>
+</html>
